@@ -6,11 +6,15 @@ router.get('/', (req, res) => {
 });
 
 router.get('/disciplines', (req, res) => {
-    res.send("Hello from disciplines");
+    res.json([]);
 });
 
 router.get('/disciplines/:id', (req, res) => {
-    res.send("id");
+    res.json(req.params);
+});
+
+router.get('/contacts', (req, res) => {
+    res.send("contacts");
 });
 
 module.exports = router;
