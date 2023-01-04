@@ -5,6 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const routes = require('./router');
 const sequelize = require('./db');
+const models = require('./models/models');
 
 const app = express();
 
